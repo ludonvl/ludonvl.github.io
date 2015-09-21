@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="author" content="Ludovic Nouvel" />
+		<meta name="description" content="Site personnel de Ludovic Nouvel, etudiant en informatique ." />
+		<meta name="keywords"  content="etudiant, informatique, epitech, projets, cv, contact" />
+		<meta name="Resource-type" content="Document" />
+		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/switcher.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/jquery.fullPage.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/font1/stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/font3/stylesheet.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.slimscroll.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
+		<script type="text/javascript" src="javascripts/examples.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#fullpage').fullpage({
+					anchors: ['Resume', 'Projets', 'CV', 'Contact'],
+					sectionsColor: ['#ACACAC', '#BBB', '#ACACAC', '#BBB'],
+					menu: '#menu',
+					responsive: 900,
+					navigation: true,
+					navigationPosition: 'right',
+					navigationTooltips: ['Resume', 'Projets', 'CV', 'Contact']
+				});
+			});
+		</script>
+		<title>Ludovic NOUVEL - Etudiant EPITECH</title>
+	</head>
+	<body>
+		<div id="footer">Ludovic Nouvel - © 2015</div>
+		<ul id="menu">
+			<li data-menuanchor="Resume" class="active"><a href="#Resume">Resume</a></li>
+			<li data-menuanchor="Projets"><a href="#Projets">Projets</a></li>
+			<li data-menuanchor="CV"><a href="#CV">CV</a></li>
+			<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+		</ul>
+		<div id="fullpage">
+			<div class="section " id="section0">
+				<div class="intro">
+					<div class="LN_roundedImage LN_photo" style="background-image: url(images/profile.png);"></div>
+					<div class="talk-bubble tri-right round border left-in">
+						<div class="talktext">
+	  					    <span class="tagline">"Je suis 
+						      <span class="tag-change">
+						        <a class="active purple" href="">développeur<span>"</span></a>
+						        <a class="purple" href="">passioné<span>"</span></a>
+						        <a class="purple" href="">innovant<span>"</span></a>
+						      </span>
+						    </span>
+					    </div>
+				    </div>
+					</p>
+					<h1 class="LN_title_resum">Ludovic Nouvel</h1>
+				    <div class="LN_box LN_resum">
+				    	<span>profil</span>
+				    	<p>
+				    		<ul>
+				    			<li>Nom <div>Nouvel</div></li>
+				    			<li>Prénom<div>Ludovic</div></li>
+				    			<li>Age<div>21 ans</div></li>
+				    			<li>Ville<div>Villemomble - (93)</div></li>
+				    		</ul>
+				    	</p>
+			    	</div>
+					<div class="LN_box LN_aboutme" id="about_me">
+				    	<span>à propos de moi</span>
+				    	<p>Etudiant à EPITECH - Paris depuis 2 ans, j'entame ma 3ème année pour obtenir mon Bachelor en informatique. Passionné par le développement et les nouvelles technologies, j'ai découvert une certaine affinité dans le domaine du web.</p>
+				    	<p>Grâce à ma curiosité, j'ai pu réaliser divers <a href="#Projets">projets</a> aussi bien personnels que professionnels. Des questions ? N'hésitez pas à me <a href="#Contact">contacter</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section1">
+				<div class="intro">
+					<h1>Projets</h1>
+					<p>En cours de réalisation...</p>
+					<div class="LN_box LN_student">
+						<span>étudiant</span>
+					</div>
+					<div class="LN_box LN_professionnal">
+						<span>professionnels</span>
+					</div>
+					<div class="LN_box LN_personnal">
+						<span>personnels</span>
+					</div>
+				</div>
+			</div>
+			<div class="section" id="section2">
+			    <div class="slide" id="slide1">
+					<div class="intro">
+						<h1>Curriculum Vitae</h1>
+					</div>
+				</div>
+			    <div class="slide" id="slide2">
+					<h1>Slide 2</h1>
+				</div>
+			</div>
+			<div class="section" id="section3">
+				<div class="intro">
+					<h1>Contact</h1>
+					<div class="LN_box LN_contact">
+				    	<span>Réseaux sociaux</span>
+						<ul>
+							<li><a target="_blank" href="http://born2share.fr"><i id="twittericon" class="fa fa-twitter fa-4x"></i></a></li>							
+							<li><a target="_blank" href="http://born2share.fr"><i class="fa fa-linkedin fa-4x"></i></a></li>							
+							<li><a target="_blank" href="http://born2share.fr"><i class="fa fa-bitbucket fa-4x"></i></a></li>							
+						</ul>
+				    	<span>Email</span>
+						<div><i class="fa fa-envelope fa-3x"></i>ludovic.nouvel@epitech.eu</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<script type="text/javascript">
+(function($){
+    $(function(){
+
+    if ($('body').hasClass("slide-vertical")) {
+      var tid = setInterval(tagline_vertical_slide, 2500);
+    }
+    else {
+      var tid = setInterval(tagline_fade, 2500);
+    }
+ 
+    // fade style
+    function tagline_fade() {
+      var curr = $("span.tagline span a.active");
+      curr.removeClass("active");
+      var nextTag = curr.next('a');
+      if (!nextTag.length) {
+        nextTag = $("span.tagline span a").first();
+      } 
+      nextTag.addClass("active");
+    }
+ 
+    // vertical slide
+    function tagline_vertical_slide() {
+      var curr = $("span.tagline span a.active");
+      curr.removeClass("active").addClass("vs-out");
+      setTimeout(function(){
+        curr.removeClass("vs-out");
+      }, 500);
+ 
+      var nextTag = curr.next('a');
+      if (!nextTag.length) {
+        nextTag = $("span.tagline span a").first();
+      } 
+      nextTag.addClass("active");
+    }
+ 
+    function abortTimer() { // to be called when you want to stop the timer
+      clearInterval(tid);
+    }
+ 
+    }); // end of document ready
+})(jQuery); // end of jQuery name space
+
+$(window).load(function(){
+	$( ".LN_title_resum" ).animate({
+		opacity: 1
+	}, 1700, function() {
+		$(".LN_photo").animate({
+			opacity: 1,
+			top: 0
+		}, 1000, function() {
+			$(".talk-bubble").animate({
+				opacity: 1
+			}, 2000);
+			$( ".LN_aboutme" ).show("drop", {direction: "right", easing: "easeInOutBack"}, 3000);
+			$(".LN_resum").slideDown(2500, "easeInOutBack");
+		});
+	});
+	$("#footer").animate({
+		right: 0
+	}, 1000);
+});
+</script>
+ 	</body>
+</html>
