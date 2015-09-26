@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="author" content="Ludovic Nouvel" />
-		<meta name="description" content="Site personnel de Ludovic Nouvel, etudiant en informatique ." />
+		<meta name="description" content="Site personnel de Ludovic Nouvel, etudiant en informatique." />
 		<meta name="keywords"  content="etudiant, informatique, epitech, projets, cv, contact" />
 		<meta name="Resource-type" content="Document" />
 		<link rel="stylesheet" type="text/css" href="stylesheets/index.css">
@@ -14,9 +14,11 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-		<script type="text/javascript" src="javascripts/jquery.slimscroll.min.js"></script>
-		<script type="text/javascript" src="javascripts/jquery.fullPage.js"></script>
-		<script type="text/javascript" src="javascripts/examples.js"></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="javascripts/jquery.slimscroll.min.js"></script>
+		<script src="javascripts/jquery.fullPage.js"></script>
+		<script src="javascripts/cv.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('#fullpage').fullpage({
@@ -106,79 +108,59 @@
 					<div class="LN_box LN_contact">
 				    	<span>Réseaux sociaux</span>
 						<ul>
-							<li><a target="_blank" href="http://born2share.fr"><i id="twittericon" class="fa fa-twitter fa-4x"></i></a></li>							
-							<li><a target="_blank" href="http://born2share.fr"><i class="fa fa-linkedin fa-4x"></i></a></li>							
-							<li><a target="_blank" href="http://born2share.fr"><i class="fa fa-bitbucket fa-4x"></i></a></li>							
+							<li><a target="_blank" href="https://twitter.com/pulsiion"><i id="twittericon" class="fa fa-twitter fa-4x"></i></a></li>
+							<li><a target="_blank" href="https://fr.linkedin.com/in/LudovicNouvel"><i class="fa fa-linkedin fa-4x"></i></a></li>
+							<li><a target="_blank" href="https://github.com/Pulsiion"><i class="fa fa-github fa-4x"></i></a></li>							
 						</ul>
 				    	<span>Email</span>
-						<div><i class="fa fa-envelope fa-3x"></i>ludovic.nouvel@epitech.eu</div>
+						<div><i class="fa fa-envelope fa-3x" id="myLetter"></i>Me contacter</div>
+						<div id="dialog-form" title="Create new user">
+						  <form>
+						    <fieldset>
+						      <label for="name">Name</label>
+						      <input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+						      <label for="email">Email</label>
+						      <input type="text" name="email" id="email" class="text ui-widget-content ui-corner-all">
+						      <label for="password">Password</label>
+						      <input type="password" name="password" id="password" class="text ui-widget-content ui-corner-all">
+						 
+						      <!-- Allow form submission with keyboard without duplicating the dialog button -->
+						      <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+						    </fieldset>
+						  </form>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-<script type="text/javascript">
-(function($){
-    $(function(){
+		<script type="text/javascript">
+		$(function() {
+		    dialog = $( "#dialog-form" ).dialog({
+			autoOpen: false,
+			height: 300,
+			width: 350,
+			modal: true,
+			buttons: {
+					"Create an account": addUser,
+					Cancel: function() {
+						dialog.dialog( "close" );
+						}
+					},
+				close: function() {
+					form[ 0 ].reset();
+					allFields.removeClass( "ui-state-error" );
+					}
+			});
 
-    if ($('body').hasClass("slide-vertical")) {
-      var tid = setInterval(tagline_vertical_slide, 2500);
-    }
-    else {
-      var tid = setInterval(tagline_fade, 2500);
-    }
- 
-    // fade style
-    function tagline_fade() {
-      var curr = $("span.tagline span a.active");
-      curr.removeClass("active");
-      var nextTag = curr.next('a');
-      if (!nextTag.length) {
-        nextTag = $("span.tagline span a").first();
-      } 
-      nextTag.addClass("active");
-    }
- 
-    // vertical slide
-    function tagline_vertical_slide() {
-      var curr = $("span.tagline span a.active");
-      curr.removeClass("active").addClass("vs-out");
-      setTimeout(function(){
-        curr.removeClass("vs-out");
-      }, 500);
- 
-      var nextTag = curr.next('a');
-      if (!nextTag.length) {
-        nextTag = $("span.tagline span a").first();
-      } 
-      nextTag.addClass("active");
-    }
- 
-    function abortTimer() { // to be called when you want to stop the timer
-      clearInterval(tid);
-    }
- 
-    }); // end of document ready
-})(jQuery); // end of jQuery name space
+			form = dialog.find( "form" ).on( "submit", function( event ) {
+/*				event.preventDefault();
+				addUser();
+*/			});
 
-$(window).load(function(){
-	$( ".LN_title_resum" ).animate({
-		opacity: 1
-	}, 1700, function() {
-		$(".LN_photo").animate({
-			opacity: 1,
-			top: 0
-		}, 1000, function() {
-			$(".talk-bubble").animate({
-				opacity: 1
-			}, 2000);
-			$( ".LN_aboutme" ).show("drop", {direction: "right", easing: "easeInOutBack"}, 3000);
-			$(".LN_resum").slideDown(2500, "easeInOutBack");
+			$( "#myLetter" ).button().on( "click", function() {
+			dialog.dialog( "open" );
+			});
 		});
-	});
-	$("#footer").animate({
-		right: 0
-	}, 1000);
-});
-</script>
+		</script>
  	</body>
 </html>

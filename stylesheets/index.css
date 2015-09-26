@@ -202,6 +202,7 @@ p{
 
 .LN_box {
 	float: left;
+	text-align: left;
 	position: absolute;
 	padding: 50px;
 	background-color: rgb(230, 230, 230);
@@ -210,7 +211,8 @@ p{
 	-o-box-shadow: 0px 1px 5px 0px  #656565;;
 	box-shadow: 0px 1px 5px 0px  #656565;;
 	filter:progid:DXImageTransform.Microsoft.Shadow(color= #656565;, Direction=180, Strength=5);
-	text-align: left;
+    -webkit-transition: border-bottom 0.3s, box-shadow 0.3s;
+    transition: border-bottom 0.3s, box-shadow 0.3s;
 }
 
 .LN_box:hover {
@@ -323,8 +325,26 @@ p{
 	margin-right: 10%;
 }
 
+.LN_contact li:nth-child(1) i:hover {
+	color: rgba(15, 157, 222, 0.9);
+}
+
+.LN_contact li:nth-child(2) i:hover {
+	color: #287BBC;
+}
+
+.LN_contact li:nth-child(3) i:hover {
+	color: rgba(40, 40, 40, 0.9);
+}
+
 .LN_contact li:nth-child(3) {
 	margin-left: 10%;
+}
+
+.LN_contact i {
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+	color: rgb(180, 180, 180);
 }
 
 .LN_contact div {
@@ -338,6 +358,11 @@ p{
 .LN_contact div i{
 	vertical-align: middle;
 	margin-right: 5%;
+}
+
+.LN_contact div i:hover {
+	color: rgba(31, 11, 117, 0.9);
+	cursor: pointer;
 }
 
 /*******************
