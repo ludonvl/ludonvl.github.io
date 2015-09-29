@@ -281,6 +281,44 @@ p{
 	font-size: 1.1em;
 }
 
+
+/*******************
+	PROJET PAGE
+*******************/
+
+.LN_curriculum {
+	left: 7%;
+	margin-top: 2.5%;
+	width: 10%;
+	text-align: center;
+}
+
+.LN_curriculum ul, .LN_curriculum i:first-of-type {
+	margin: 2% 0 2% 0;
+}
+
+.LN_curriculum li {
+	display: inline-block;
+}
+
+.LN_curriculum li:nth-child(1) {
+	margin-right: 5%;
+}
+
+.LN_curriculum li:nth-child(3) {
+	margin-left: 5%;
+}
+
+.LN_curriculum i {
+    -webkit-transition: color 0.7s;
+    transition: color 0.7s;
+	color: rgb(180, 180, 180);
+}
+
+.LN_curriculum i:hover {
+	color: rgba(31, 11, 117, 0.9);
+}
+
 /*******************
 	PROJET PAGE
 *******************/
