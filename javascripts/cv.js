@@ -122,20 +122,11 @@
       }, 1700, function() {
         $( ".LN_aboutme" ).show("drop", {direction: "right", easing: "easeInOutBack"}, 3000);
         $(".LN_resum").slideDown(2500, "easeInOutBack");
-        $(".LN_photo").animate({
-          opacity: 1,
-          top: 0
-        }, 1000, function() {
-          $(".talk-bubble").animate({
-            opacity: 1
-          }, 2000);
-        });
-      });
+    });
       $("#footer").animate({
         right: 0
       }, 1000);
-    });
-
     $("#myLetter").dialog({});
+  });
 
 })(jQuery); // end of jQuery name space
