@@ -1,21 +1,17 @@
 $(function() {
-
-
     $("#button-send-form").click(function(e) {
         $("#contactForm").submit();
     });
 
     $("#contactForm").submit(function(e) {
         e.preventDefault();
-alert("#contactForm").serialize() );
 
             $.ajax({
-                url: "//formspree.io/nouvel.l@live.fr",
+                url: "//formspree.io/ludovic.nouvel@epitech.eu",
                 type: "POST",
-                data: $(this).serialize(),
+                data: {message: "hello!"},
                 dataType: "json",
-                cache: false,
-                success: function() {
+                success: function(data) {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
@@ -42,11 +38,8 @@ alert("#contactForm").serialize() );
             });
     });
 
-
-
-
-
-/*    $("input,textarea").jqBootstrapValidation({
+/*
+    $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
             // additional error messages or events
@@ -69,10 +62,9 @@ alert("#contactForm").serialize() );
             $.ajax({
                 url: "//formspree.io/nouvel.l@live.fr",
                 type: "POST",
-                data: $(this).serialize(),
+                data: {message: "hello!"},
                 dataType: "json",
-                cache: false,
-                success: function() {
+                success: function(data) {
                     // Enable button & show success message
                     $("#btnSubmit").attr("disabled", false);
                     $('#success').html("<div class='alert alert-success'>");
@@ -101,8 +93,8 @@ alert("#contactForm").serialize() );
         filter: function() {
             return $(this).is(":visible");
         },
-    });*/
-
+    });
+*/
     $("a[data-toggle=\"tab\"]").click(function(e) {
         e.preventDefault();
         $(this).tab("show");
