@@ -193,30 +193,33 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <form name="sentMessage" id="contactForm" novalidate>
-                        <input type="hidden" name="_subject" value="Contact CV Ludovic" >
+                    <form action="//formspree.io/ludovic.nouvel@epitech.eu" method="post" id="contactForm">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nom</label>
-                                <input type="text" class="form-control" placeholder="* Nom" id="name" required data-validation-required-message="Veuillez renseigner votre nom.">
+                                <input type="text" class="form-control" placeholder="* Nom" name="name" id="name" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Adresse email</label>
-                                <input type="email" class="form-control" placeholder="* Adresse email" id="email" required data-validation-required-message="Veuillez renseigner votre adresse email.">
+                                <input type="email" class="form-control" placeholder="* Adresse email" name="email" id="email" required>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="* Message" id="message" required data-validation-required-message="Veuillez renseigner un message."></textarea>
+                                <textarea rows="5" class="form-control" placeholder="* Message" name="message" id="message" required></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
+                        <!-- CONFIG -->
+                        <input style='display:none' type="text" name="_gotcha">
+                        <input type="hidden" name="_subject" value="Contact CV Ludovic Nouvel">
+                        <!-- /CONFIG -->
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
