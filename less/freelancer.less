@@ -156,9 +156,28 @@ header {
 	}
 }
 
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+	color: @brand-primary;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+	color: darken(@brand-primary, 10%);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: darken(@brand-primary, 10%);
+}
+
 .navbar-default,
 .navbar-inverse {
-	border: none;
+	background-color: white;
+	border-bottom: 3px solid @brand-primary;
 }
 
 section {
@@ -190,6 +209,17 @@ section.success {
 	section.first {
 		padding-top: 75px;
 	}
+}
+
+.btn-success {
+	color: white;
+	background-color: @brand-success;
+	border-color: @brand-success;
+}
+
+.btn-success:hover {
+	background-color: darken(@brand-success, 5%);
+	border-color: darken(@brand-success, 5%);
 }
 
 #portfolio {
@@ -334,7 +364,7 @@ footer {
 	}
 	.footer-below {
 		padding: 25px 0;
-		background-color: darken(@brand-primary, 5%);
+		background-color: darken(@brand-primary, 10%);
 	}
 }
 
