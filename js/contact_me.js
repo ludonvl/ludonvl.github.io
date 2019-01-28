@@ -2,7 +2,7 @@ $(function() {
     $("#contactForm").submit(function(e) {
         e.preventDefault();
         $.ajax({
-            url: "//formspree.io/ludovic.nouvel@epitech.eu", 
+            url: "//formspree.io/contact@ludovicnouvel.fr", 
             method: "POST",
             data: $(this).serialize(),
             dataType: "json",
