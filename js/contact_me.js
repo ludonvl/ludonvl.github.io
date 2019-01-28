@@ -9,12 +9,12 @@ $(function() {
             success: function(data){
                 // Enable button & show success message
                 $("#btnSubmit").attr("disabled", false);
-                $('#success').html("<div class='alert alert-success'>");
-                $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                $('#success').html("<div class='alert alert-info'>");
+                $('#success > .alert-info').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                     .append("</button>");
-                $('#success > .alert-success')
+                $('#success > .alert-info')
                     .append("<strong>Votre message a été envoyé avec succes. </strong>");
-                $('#success > .alert-success')
+                $('#success > .alert-info')
                     .append('</div>');
 
                 //clear all fields
