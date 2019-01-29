@@ -22,6 +22,7 @@ $(function() {
             },
             error: function(err) {
                 // Fail message
+                console.log(err);
                 $('#success').html("<div class='alert alert-danger'>");
                 $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                     .append("</button>");
