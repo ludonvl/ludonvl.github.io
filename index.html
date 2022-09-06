@@ -256,7 +256,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        Copyright &copy; Ludovic Nouvel - 2021
+                        Copyright &copy; Ludovic Nouvel - <span id="copyright-year"></span>
                     </div>
                 </div>
             </div>
@@ -453,6 +453,7 @@
 
     <script type="text/javascript">
         $(function () {
+            $('#copyright-year').text(new Date().getFullYear())
             $('.tlt').textillate({
                 // the default selector to use when detecting multiple texts to animate
                 selector: '.texts',
