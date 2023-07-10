@@ -4,5 +4,5 @@ Disallow: /*.jpg$
 Disallow: /*.png$
 Disallow: /*.gif$
 Disallow: /img/portfolio/
-Disallow: /img/photo_profil.jpg
+Disallow: /img/profil_picture.jpg
 Allow: /
