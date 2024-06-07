@@ -1,11 +1,4 @@
-
----
-### Want to build & ship full stack apps with Nuxt 3? Try [Supersaas](https://supersaas.dev?ref=github)
-
-
-#### The saas starter kit with Auth, Billing, Database, Storage, KV and lot's of other saas recipes.
----
-
+[![Deploy to GitHub Pages](https://github.com/ludonvl/ludonvl.github.io/actions/workflows/deploy.yml/badge.svg?branch=master)](https://github.com/ludonvl/ludonvl.github.io/actions/workflows/deploy.yml)
 
 ## Features
 
