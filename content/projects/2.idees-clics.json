@@ -1,0 +1,9 @@
+{
+  "name": "Idées, Clics & solutions",
+  "url": "https://www.ideesclics.team/",
+  "description": "Entreprise ESN. Inventeurs de solutions",
+  "thumbnail": "/projects/ics-logo.png",
+  "poste": "Développeur web fullstack",
+  "stack": ["PHP", "Lumen", "Javascript", "jQuery", "HTML/CSS", "MySQL", "VSCode"],
+  "status": "Ended"
+}

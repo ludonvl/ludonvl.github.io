@@ -1,0 +1,9 @@
+{
+  "name": "Witco (ex MonBuilding)",
+  "url": "https://www.witco.io/fr",
+  "description": "Application tout-en-un pour la vie au travail",
+  "poste": "Développeur web & mobile",
+  "stack": ["Meteor", "React Native", "MongoDB", "Git", "Github", "Trello", "Atom"],
+  "thumbnail": "/projects/witco-icon.svg",
+  "status": "Ended"
+}
