@@ -48,11 +48,11 @@ const items = [
     path: "/portfolio",
     icon: "solar:folder-with-files-outline",
   },
-  {
-    name: "Articles",
-    path: "/articles",
-    icon: "solar:document-add-outline",
-  },
+  // {
+  //   name: "Articles",
+  //   path: "/articles",
+  //   icon: "solar:document-add-outline",
+  // },
   // { name: "Lab", path: "/lab", icon: "heroicons:beaker" },
   {
     name: "Setup",

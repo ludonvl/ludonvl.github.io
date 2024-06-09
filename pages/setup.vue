@@ -2,7 +2,7 @@
   <main class="min-h-screen">
     <AppHeader
       class="mb-12"
-      title="Quelle est la compo de mon setup ?"
+      title="Un setup, mon setup"
       :description="description"
     />
     <div class="space-y-24">
@@ -24,7 +24,7 @@
 
 <script setup>
 const description =
-  "J'aime développer dans de bonnes conditions. Le choix du matériel et des logiciels se doit d'être judicieux. Surtout l'idée très précise que j'ai pour mon setup. Je veux qu'il soit le plus hybride possible. Il répond à mes deux besoins. D'une part pour de la productivité; étant en 100% remote il est important d'avoir les bons outils pour augmenter son efficacité. D'autre part pour du gaming; j'aime passé du temps aussi sur des jeux vidéos en plus des projets tech. Voici une liste exhaustive de ce que je possède afin d'aboutir à cette dualité.";
+  "J'aime développer dans de bonnes conditions. Le choix du matériel et des logiciels se doit d'être judicieux. Je veux que mon setup soit le plus hybride possible. Il doit répondre à mes deux besoins. D'une part pour de la productivité; étant en 100% remote il est important d'avoir les bons outils pour augmenter son efficacité. D'autre part pour du gaming; j'aime passé du temps aussi sur des jeux vidéos en plus des projets tech. Voici une liste exhaustive de ce que je possède afin d'aboutir à cette dualité.";
 useSeoMeta({
   title: "Mon setup | Ludovic Nouvel",
   description,
