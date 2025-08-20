@@ -5,15 +5,14 @@
       sizes="48px sm:64px" placeholder format="webp" />
     <hacker-title :labels="['Bonjour', 'Hello', 'Hola', 'Buongiorno', 'Halo', 'Hej']" />
     <p class="text-gray-900 dark:text-gray-400">
-      Ludo, humble développeur fullstack et plus récemment Lead développeur, je vis dans la région de Normandie en France.
-      Je porte une attirance particulière au domaine du web et plus précisément à l'expérimentation de projet Saas.
-      Résoudre des problématiques concrètes, par la construction d'applications utiles et pertinentes pour les utilisateurs, fait entièrement sens pour moi.
-      Ma stack de prédilection est la suivante : Javascript, Vuejs &amp; Node en passant par PHP &amp; Laravel.
+      Je m’appelle <strong>Ludo</strong>, développeur fullstack et récemment <strong>Lead développeur</strong>, basé en Normandie. Passionné par le web, j’ai un attrait particulier pour l’expérimentation autour de projets <strong>SaaS</strong>. Ce qui m’anime au quotidien : transformer des problématiques concrètes en applications utiles et pertinentes pour les utilisateurs.
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      De jour, je prends le rôle de Lead dev chez
-      <a href="https://heyteam.com" target="_blank" class="underline">Heyteam</a> afin de contribuer à l'amélioration continue du produit.<br />
-      À mes heures perdues, je bricole et expérimente quelques apps & nouvelles technos qui me passe par la tête.
+      Ma stack de prédilection s’articule autour de <strong>JavaScript, Vue.js et Node.js</strong>, avec une solide expérience sur <strong>PHP & Laravel</strong>.
+    </p>
+    <p class="text-gray-900 dark:text-gray-400">
+      En journée, j’occupe le poste de <strong>Lead développeur</strong> chez <a href="https://heyteam.com" target="_blank" class="underline">Heyteam</a>, où je contribue à l’amélioration continue du produit.
+      En parallèle, j’aime profiter de mon temps libre pour expérimenter, bricoler et tester de nouvelles idées ou technologies qui éveillent ma curiosité.
     </p>
   </div>
 </template>
