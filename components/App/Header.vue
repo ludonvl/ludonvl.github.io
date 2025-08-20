@@ -5,9 +5,7 @@
     >
       {{ title }}
     </h1>
-    <p class="mt-6 text-base text-gray-600 dark:text-gray-400">
-      {{ description }}
-    </p>
+    <p class="mt-6 text-base text-gray-600 dark:text-gray-400" v-html="description"></p>
   </div>
 </template>
 

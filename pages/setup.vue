@@ -24,7 +24,7 @@
 
 <script setup>
 const description =
-  "J'aime développer dans de bonnes conditions. Le choix du matériel et des logiciels se doit d'être judicieux. Je veux que mon setup soit le plus hybride possible. Il doit répondre à mes deux besoins. D'une part pour de la productivité; étant en 100% remote il est important d'avoir les bons outils pour augmenter son efficacité. D'autre part pour du gaming; j'aime passé du temps aussi sur des jeux vidéos en plus des projets tech. Voici une liste exhaustive de ce que je possède afin d'aboutir à cette dualité.";
+  "J’accorde beaucoup d’importance à mon environnement de travail. Le choix du matériel et des logiciels doit être réfléchi, afin que mon setup reste <strong>hybride</strong> et réponde à deux besoins essentiels.<br /><br />D’un côté, la <strong>productivité</strong> : étant en 100% remote, il est indispensable de disposer des bons outils pour travailler efficacement.<br />De l’autre, le <strong>gaming</strong> : j’aime aussi profiter de mon temps libre pour jouer, en parallèle de mes projets tech.<br /><br />Voici la liste complète de mon setup, pensé pour répondre à cette double exigence.";
 useSeoMeta({
   title: "Mon setup | Ludovic Nouvel",
   description,
