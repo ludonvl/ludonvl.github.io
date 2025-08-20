@@ -30,7 +30,8 @@
 
 <script setup>
 const description =
-  "Pendant mon cursus d'informatique à EPITECH, j'ai pu monter en compétence sur divers sujets technique. Ça a été une période riche afin de parfaire ma vision du développement et affiner ce que je vise sur le plan professionnel. Dans ce cadre & personnellement, j'ai pu mener à bien des projets qui m'ont passionné et dont je suis fier. Vous trouverez ci-dessous les expériences les plus précieuses & enrichissantes, celles qui m'ont fait grandir techniquement mais aussi humainement.";
+  "Au cours de mon cursus en informatique à EPITECH, j’ai eu l’opportunité d’explorer de nombreux sujets techniques et de renforcer mes compétences. Cette période a été particulièrement formatrice, autant pour affiner ma vision du développement que pour clarifier mes ambitions professionnelles. Que ce soit dans un cadre académique ou personnel, j’ai mené à bien plusieurs projets qui m’ont réellement passionné et dont je garde une grande fierté.
+Vous trouverez ci-dessous une sélection des expériences les plus marquantes : celles qui m’ont permis de grandir, non seulement sur le plan technique, mais aussi sur le plan humain.";
 useSeoMeta({
   title: "Porfolio | Ludovic Nouvel",
   description,
