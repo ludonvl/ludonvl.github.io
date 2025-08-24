@@ -60,7 +60,7 @@ const items = [
     icon: "solar:backpack-outline",
   },
   {
-    name: "Bookmarks",
+    name: "Favoris",
     path: "/bookmarks",
     icon: "solar:bookmark-linear",
   },

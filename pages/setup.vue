@@ -2,7 +2,7 @@
   <main class="min-h-screen">
     <AppHeader
       class="mb-12"
-      title="Un setup, mon setup"
+      title="Setup"
       :description="description"
     />
     <div class="space-y-24">
@@ -26,7 +26,7 @@
 const description =
   "J’accorde beaucoup d’importance à mon environnement de travail. Le choix du matériel et des logiciels doit être réfléchi, afin que mon setup reste <strong>hybride</strong> et réponde à deux besoins essentiels.<br /><br />D’un côté, la <strong>productivité</strong> : étant en 100% remote, il est indispensable de disposer des bons outils pour travailler efficacement.<br />De l’autre, le <strong>gaming</strong> : j’aime aussi profiter de mon temps libre pour jouer, en parallèle de mes projets tech.<br /><br />Voici la liste complète de mon setup, pensé pour répondre à cette double exigence.";
 useSeoMeta({
-  title: "Mon setup | Ludovic Nouvel",
+  title: "Setup | Ludovic Nouvel",
   description,
 });
 const { data: items } = await useAsyncData("uses", () =>
