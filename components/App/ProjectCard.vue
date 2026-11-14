@@ -18,7 +18,17 @@
         {{ project.name }}
       </h3>
       <p class="text-sm text-muted">{{ project.description }}</p>
-      <p class="text-sm text-muted">{{ project.poste }}</p>
+      <p class="text-sm text-muted">
+        {{ project.poste }}<template v-if="project.periode"> · {{ project.periode }}</template>
+      </p>
+      <ul
+        v-if="project.realisations && project.realisations.length"
+        class="mt-1 list-disc space-y-0.5 pl-4 text-sm text-gray-700 dark:text-gray-300"
+      >
+        <li v-for="(realisation, index) in project.realisations" :key="index">
+          {{ realisation }}
+        </li>
+      </ul>
       <ul
         v-if="project.stack && project.stack.length > 0"
         class="flex flex-wrap gap-1.5 pt-2"

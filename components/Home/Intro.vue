@@ -12,14 +12,31 @@
       <h1 class="mt-1 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
         Ludovic Nouvel
       </h1>
-      <p class="mt-2 text-lg font-medium text-gray-700 dark:text-gray-300">
-        Lead developer & product builder
-      </p>
     </div>
-    <p class="text-gray-700 dark:text-gray-400">
-      Je construis des produits web utiles, j'expérimente des idées et je les mets en ligne.
-      Aujourd'hui lead developer chez Heyteam (Vue.js / Laravel).
+    <!-- TODO(ludo): valider le texte du hero (proposition issue de l'audit). -->
+    <p class="text-lg text-gray-700 dark:text-gray-300">
+      Lead developer chez Heyteam. Je conçois et je livre des produits web, du
+      besoin à la mise en prod. Vue.js et Laravel au quotidien, et quelques
+      projets perso sur le côté.
     </p>
+    <div class="flex flex-wrap gap-3 pt-2">
+      <UButton
+        to="/portfolio"
+        label="Voir mes projets"
+        color="black"
+        size="lg"
+        class="min-h-[44px]"
+      />
+      <UButton
+        to="mailto:ludo.nvl@gmail.com"
+        external
+        label="Écrivez-moi"
+        color="gray"
+        size="lg"
+        icon="i-heroicons-envelope"
+        class="min-h-[44px]"
+      />
+    </div>
   </div>
 </template>
 

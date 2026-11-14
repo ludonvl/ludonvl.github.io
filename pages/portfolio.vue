@@ -2,6 +2,13 @@
   <main>
     <AppHeader class="mb-12" title="Portfolio" :description="description" />
     <div class="space-y-16">
+      <!-- Section Projets : masquée tant qu'aucune étude de cas n'est publiée. -->
+      <div v-if="studies && studies.length" class="space-y-8">
+        <ul>
+          <AppUsesHeader title="Projets" />
+        </ul>
+        <AppCaseStudyCard v-for="study in studies" :key="study._path" :study="study" />
+      </div>
       <div class="space-y-8">
         <ul>
           <AppUsesHeader title="Expérience professionnelle" />
@@ -19,8 +26,9 @@
 </template>
 
 <script setup>
+// TODO(ludo): remplacer « Plusieurs années » par le nombre exact (« X ans à construire… »).
 const description =
-  "Au cours de mon cursus en informatique à <strong>EPITECH</strong>, j’ai eu l’opportunité d’explorer de nombreux sujets techniques et de renforcer mes compétences. Cette période a été particulièrement formatrice, autant pour <strong>affiner ma vision du développement</strong> que pour <strong>clarifier mes ambitions professionnelles</strong>. <br /><br />Que ce soit dans un cadre académique ou personnel, j’ai mené à bien plusieurs projets qui m’ont <strong>réellement passionné</strong> et dont je garde une grande fierté. Vous trouverez ci-dessous une sélection des expériences les plus marquantes : celles qui m’ont permis de <strong>grandir</strong>, non seulement sur le plan <strong>technique</strong>, mais aussi sur le plan <strong>humain</strong>.";
+  "Plusieurs années à construire des produits web, de l'ESN au SaaS. Voici les équipes avec qui j'ai travaillé et ce que j'y ai livré.";
 usePageSeo({
   title: "Portfolio | Ludovic Nouvel",
   description:
@@ -28,6 +36,7 @@ usePageSeo({
   path: "/portfolio",
 });
 
+const { data: studies } = await useCaseStudies("case-studies-all");
 const { data: projects } = await useAsyncData("projects-all", () =>
   queryContent("/projects").find()
 );

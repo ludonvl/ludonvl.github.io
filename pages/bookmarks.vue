@@ -1,28 +1,44 @@
 <template>
   <main>
-    <AppHeader class="mb-8" title="Favoris" :description="description" />
-    <ul class="space-y-2">
-      <li v-for="bookmark in bookmarks" :key="bookmark.id">
-        <a
-          :href="bookmark.url"
-          target="_blank"
-          class="flex items-center gap-3 hover:bg-gray-100 dark:hover:bg-white/10 p-2 rounded-lg -m-2 text-sm min-w-0"
-        >
-          <UAvatar
-            :src="getThumbnail(bookmark.url)"
-            :alt="bookmark.label"
-            :ui="{ rounded: 'rounded-md' }"
-          />
-          <p class="truncate text-gray-700 dark:text-gray-200">
-            {{ bookmark.label }}
-          </p>
-          <span class="flex-1"></span>
-          <span class="shrink-0 text-xs font-medium text-muted">
-            {{ getHost(bookmark.url) }}
-          </span>
-        </a>
-      </li>
-    </ul>
+    <AppHeader class="mb-12" title="Favoris" :description="description" />
+    <div class="space-y-12">
+      <section v-for="group in groups" :key="group.type" class="space-y-4">
+        <ul>
+          <AppUsesHeader :title="group.label" />
+        </ul>
+        <ul class="space-y-2">
+          <li v-for="bookmark in group.items" :key="bookmark.id">
+            <a
+              :href="bookmark.url"
+              target="_blank"
+              rel="noopener"
+              class="-mx-2 flex min-w-0 items-start gap-3 rounded-lg p-2 text-sm hover:bg-gray-100 dark:hover:bg-white/10"
+            >
+              <span
+                class="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300"
+                aria-hidden="true"
+              >
+                <Icon :name="types[bookmark.type].icon" class="h-4 w-4" />
+              </span>
+              <span class="min-w-0 flex-1 pt-1.5">
+                <span class="flex items-baseline gap-3">
+                  <span class="truncate text-gray-800 dark:text-gray-200">
+                    {{ bookmark.label }}
+                  </span>
+                  <span class="flex-1"></span>
+                  <span class="shrink-0 text-xs font-medium text-muted">
+                    {{ getHost(bookmark.url) }}
+                  </span>
+                </span>
+                <span v-if="bookmark.pourquoi" class="mt-0.5 block text-muted">
+                  {{ bookmark.pourquoi }}
+                </span>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
 </template>
 
@@ -36,75 +52,118 @@ usePageSeo({
   path: "/bookmarks",
 });
 
+const types = {
+  video: { label: "Vidéos", icon: "lucide:play-circle" },
+  livre: { label: "Livres", icon: "lucide:book-open" },
+  article: { label: "Articles et inspirations", icon: "lucide:file-text" },
+  outil: { label: "Outils", icon: "lucide:wrench" },
+};
+
+// TODO(ludo): pour chaque favori, renseigner « pourquoi » (une ligne) et « ajouteLe » (AAAA-MM-JJ).
 const bookmarks = [
   {
     id: 1,
+    type: "video",
     label: "Adam Wathan — Tailwind CSS Best Practice Patterns",
     url: "https://www.youtube.com/watch?v=J_7_mnFSLDg",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 2,
+    type: "outil",
     label: "DiceBear — générateur d'avatars",
     url: "https://www.dicebear.com/",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 3,
+    type: "article",
     label: "Refactoring.guru",
     url: "https://refactoring.guru/",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 4,
+    type: "livre",
     label: "Coder proprement — Robert C. Martin",
-    url: "https://www.amazon.com/CODER-PROPREMENT-Robert-C-MARTIN/dp/232600227X/ref=sr_1_1?crid=3CGRMR1586CZI&dib=eyJ2IjoiMSJ9.xdw5oTqj_5rWUf5k1FHpJNZZ1nFeALZoxWZME-D14yvshgATWsQtxSpKAYW6-Qnw.yob7vh7Htfh_-9OKXWBsdtm1GEslVhKwslalz2YJvxM&dib_tag=se&keywords=coder+proprement&qid=1756028809&sprefix=coder+proprement%2Caps%2C144&sr=8-1",
+    url: "https://www.amazon.fr/dp/232600227X",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 5,
+    type: "livre",
     label: "Engineering Management for the Rest of Us — Sarah Drasner",
-    url: "https://www.amazon.com/Engineering-Management-Rest-Sarah-Drasner-ebook/dp/B0BGYVDX35/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.T-aUgnIxJ_hErxfAitbkXE7NelOkBqZuIxtg-WIXjuHi8PIOHzIrAkpDbBlKXoIdbGXPfaP5Y3DsdfL4ypOldF2e8X22tC0gh_58BHZUUd4vGys53p9gGOChIHG2Mx6PiUfoZcIlM31iiM-FkOKFOHrmP-iIApIGcJgzdcPFmMB0Irei2CWpFNgaQ_klnR_NexA5qFkXtZurulpn7l8o0aqzND_QweXqPcbnPttFbgU.MHe-6pjJHWleyLo0hKiLzuXY77qxJMSNQCXoHjAi4Bo&qid=1756028852&sr=8-1",
+    url: "https://www.amazon.fr/dp/B0BGYVDX35",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 6,
+    type: "outil",
     label: "Laravel Boost",
     url: "https://github.com/laravel/boost",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 7,
+    type: "outil",
     label: "FrankenPHP — serveur PHP moderne",
     url: "https://github.com/php/frankenphp",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 8,
+    type: "outil",
     label: "Hatica — Engineering analytics for developer productivity",
     url: "https://www.hatica.io/",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 9,
+    type: "article",
     label: "Tines — exemple de landing page",
     url: "https://www.tines.com/product",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 10,
+    type: "article",
     label: "Netflix Tech Blog — Accelerating Video Quality Control",
     url: "https://netflixtechblog.com/accelerating-video-quality-control-at-netflix-with-pixel-error-detection-47ef7af7ca2e",
+    pourquoi: "",
+    ajouteLe: null,
   },
   {
     id: 11,
+    type: "outil",
     label: "Make",
-    url: "https://www.make.com/en",
+    url: "https://www.make.com/",
+    pourquoi: "",
+    ajouteLe: null,
   },
 ];
 
-function getHost(url) {
-  const parsedUrl = new URL(url);
-  let host = parsedUrl.host;
-  if (host.startsWith("www.")) {
-    host = host.substring(4);
-  }
-  return host;
-}
+// Groupes dans l'ordre de `types` ; au sein d'un groupe, les plus récents d'abord quand `ajouteLe` est renseigné.
+const groups = Object.entries(types)
+  .map(([type, { label }]) => ({
+    type,
+    label,
+    items: bookmarks
+      .filter((bookmark) => bookmark.type === type)
+      .sort((a, b) => (b.ajouteLe || "").localeCompare(a.ajouteLe || "")),
+  }))
+  .filter((group) => group.items.length);
 
-function getThumbnail(url) {
-  const host = getHost(url);
-  return `https://logo.clearbit.com/${host}`;
+function getHost(url) {
+  const host = new URL(url).host;
+  return host.startsWith("www.") ? host.substring(4) : host;
 }
 </script>

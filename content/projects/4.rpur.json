@@ -3,7 +3,11 @@
   "url": "https://www.r-pur.com/",
   "description": "Masque anti-pollution",
   "poste": "Développeur mobile",
-  "stack": ["React Native", "Git", "GitHub", "Atom"],
+  "periode": "",
+  "realisations": [],
+  "stack": [
+    "React Native"
+  ],
   "thumbnail": "/projects/rpur-logo.avif",
   "status": "Ended"
 }

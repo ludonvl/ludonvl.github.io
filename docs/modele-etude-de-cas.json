@@ -1,0 +1,13 @@
+{
+  "todo": "TODO(ludo): copier ce fichier dans content/etudes-de-cas/1.mon-projet.json et le remplir. La section Projets apparaît dès qu'un fichier a publie: true.",
+  "titre": "TODO(ludo): nom du projet",
+  "probleme": "TODO(ludo): le besoin ou le problème de départ, en une ou deux phrases",
+  "construit": "TODO(ludo): ce que j'ai construit (périmètre, choix techniques)",
+  "resultat": "TODO(ludo): le résultat, chiffré si possible",
+  "capture": "/etudes-de-cas/TODO-capture.png",
+  "lien": "https://TODO",
+  "stack": [
+    "TODO"
+  ],
+  "publie": false
+}

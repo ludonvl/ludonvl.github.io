@@ -3,7 +3,13 @@
   "url": "https://www.witco.io/fr",
   "description": "Application tout-en-un pour la vie au travail",
   "poste": "Développeur web & mobile",
-  "stack": ["Meteor", "React Native", "MongoDB", "Git", "GitHub", "Trello", "Atom"],
+  "periode": "",
+  "realisations": [],
+  "stack": [
+    "Meteor",
+    "React Native",
+    "MongoDB"
+  ],
   "thumbnail": "/projects/witco-icon.svg",
   "status": "Ended"
 }
