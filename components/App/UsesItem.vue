@@ -1,12 +1,12 @@
 <template>
   <li>
-    <NuxtLink :to="item.url" class="group" target="_blank" external>
+    <NuxtLink :to="item.url" class="group block" target="_blank" external>
       <p
-        class="text-base font-semibold text-gray-700 dark:text-gray-300 group-hover:text-primary-600"
+        class="text-base font-semibold text-gray-700 group-hover:text-primary-600 dark:text-gray-300"
       >
         {{ item.name }}
       </p>
-      <p class="text-sm text-gray-500">{{ item.description }}</p>
+      <p class="text-sm text-muted">{{ item.description }}</p>
     </NuxtLink>
   </li>
 </template>

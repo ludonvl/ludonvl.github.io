@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-6">
-      Portfolio
-    </h2>
+    <AppSectionTitle>Portfolio</AppSectionTitle>
     <div class="space-y-4">
       <AppProjectCard
         v-for="(project, id) in projects"
@@ -16,6 +14,8 @@
         to="/portfolio"
         variant="link"
         color="gray"
+        size="lg"
+        class="min-h-[44px]"
       />
     </div>
   </div>

@@ -1,12 +1,14 @@
 <template>
   <NuxtLoadingIndicator color="#14b8a6" />
   <AppNavbar />
-  <div class="h-32"></div>
-  <UContainer>
-    <NuxtPage />
-  </UContainer>
-  <div class="h-32"></div>
-  <AppFooter />
+  <div class="flex min-h-screen flex-col">
+    <div class="h-28 shrink-0"></div>
+    <UContainer class="w-full flex-1">
+      <NuxtPage />
+    </UContainer>
+    <div class="h-16 shrink-0"></div>
+    <AppFooter />
+  </div>
 </template>
 
 <style>
@@ -23,5 +25,12 @@
 .page-enter-from {
   opacity: 0;
   transform: translateY(5px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-enter-active,
+  .page-leave-active {
+    transition: none;
+  }
 }
 </style>

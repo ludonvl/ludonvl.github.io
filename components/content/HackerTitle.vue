@@ -1,10 +1,12 @@
 <template>
   <div>
-    <h1 class="text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100"
-          @mouseenter="startScrambling"
->
+    <component
+      :is="tag"
+      :class="textClass"
+      @mouseenter="startScrambling"
+    >
       {{ displayText }}
-    </h1>
+    </component>
   </div>
 </template>
 
@@ -13,6 +15,14 @@ const props = defineProps({
   labels: {
     type: Array,
     required: true
+  },
+  tag: {
+    type: String,
+    default: "h1",
+  },
+  textClass: {
+    type: String,
+    default: "text-xl font-bold tracking-tight text-gray-800 dark:text-gray-100",
   },
 });
 

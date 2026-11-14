@@ -1,8 +1,10 @@
 <template>
-  <main class="min-h-screen">
-    <div class="space-y-24">
-      <HomeIntro />
-      <HomeSocialLinks />
+  <main>
+    <div class="space-y-16">
+      <div class="space-y-4">
+        <HomeIntro />
+        <HomeSocialLinks />
+      </div>
       <HomeFeaturedProjects />
       <!-- <HomeFeaturedArticles /> -->
       <HomeContact />

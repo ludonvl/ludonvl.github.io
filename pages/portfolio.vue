@@ -1,7 +1,7 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader class="mb-12" title="Portfolio" :description="description" />
-    <div class="space-y-24">
+    <div class="space-y-16">
       <div class="space-y-8">
         <ul>
           <AppUsesHeader title="Expérience professionnelle" />

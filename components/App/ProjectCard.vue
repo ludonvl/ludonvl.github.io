@@ -1,33 +1,42 @@
 <template>
   <component
     :is="project.url ? NuxtLink : 'div'"
-    class="flex items-end gap-4 group p-2 -m-2 rounded-lg"
+    class="group -m-2 flex items-start gap-4 rounded-lg p-2 sm:items-end"
     v-bind="project.url ? { to: project.url, target: '_blank', external: true } : {}"
   >
-    <div class="max-w-md">
-      <h3 class="text-sm font-medium group-hover:text-primary-600">
-        {{ project.name }}
-      </h3>
-      <p class="text-gray-400 text-sm">{{ project.description }}</p>
-      <p class="text-gray-400 text-sm">{{ project.poste }}</p>
-      <div v-if="project.stack && project.stack.length > 0" class="flex gap-2 pt-1">
-        <div v-for="(stack, index) in project.stack" 
-          :key="index" 
-          class="flex dark:bg-gray-800 bg-gray-100 text-gray-400 text-xs p-1 rounded-lg"
-        >
-          {{ stack }}
-        </div>
-      </div>
-    </div>
-    <div
-      class="flex-1 border-b border-dashed border-gray-300 dark:border-gray-800 group-hover:border-gray-700"
-    ></div>
     <UAvatar
       :src="project.thumbnail"
       :ui="{ rounded: 'rounded z-10 relative' }"
       size="md"
       :alt="project.name"
+      class="order-first shrink-0 sm:order-last"
     />
+    <div class="min-w-0 flex-1 sm:max-w-md sm:flex-none">
+      <h3
+        class="text-sm font-medium text-gray-900 group-hover:text-primary-600 dark:text-gray-100"
+      >
+        {{ project.name }}
+      </h3>
+      <p class="text-sm text-muted">{{ project.description }}</p>
+      <p class="text-sm text-muted">{{ project.poste }}</p>
+      <ul
+        v-if="project.stack && project.stack.length > 0"
+        class="flex flex-wrap gap-1.5 pt-2"
+        aria-label="Stack"
+      >
+        <li
+          v-for="(stack, index) in project.stack"
+          :key="index"
+          class="whitespace-nowrap rounded-md bg-gray-100 px-1.5 py-0.5 text-xs text-muted dark:bg-gray-800"
+        >
+          {{ stack }}
+        </li>
+      </ul>
+    </div>
+    <div
+      class="hidden flex-1 border-b border-dashed border-gray-300 group-hover:border-gray-700 sm:block dark:border-gray-800 dark:group-hover:border-gray-500"
+      aria-hidden="true"
+    ></div>
   </component>
 </template>
 

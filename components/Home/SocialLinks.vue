@@ -1,25 +1,19 @@
 <template>
-  <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">Retrouvez-moi sur</h2>
-    <div class="space-y-5">
-      <NuxtLink
-        v-for="link in links"
-        :key="link.icon"
-        :to="link.url"
-        target="_blank"
-        external
-        class="flex items-end gap-4 dark:hover:text-gray-300 group"
-      >
-        <span class="text-sm">
+  <nav aria-label="Réseaux">
+    <ul class="-mx-3 flex flex-wrap items-center gap-x-2">
+      <li v-for="link in links" :key="link.icon">
+        <NuxtLink
+          :to="link.url"
+          target="_blank"
+          external
+          class="inline-flex min-h-[44px] items-center gap-2 rounded-lg px-3 text-sm font-medium text-gray-700 transition hover:bg-gray-100 hover:text-primary-600 dark:text-gray-300 dark:hover:bg-white/10 dark:hover:text-primary-400"
+        >
+          <Icon :name="link.icon" class="h-5 w-5" aria-hidden="true" />
           {{ link.name }}
-        </span>
-        <div
-          class="flex-1 border-b border-dashed border-gray-300 dark:border-gray-800 group-hover:border-gray-700"
-        ></div>
-        <Icon :name="link.icon" class="w-6 h-6"></Icon>
-      </NuxtLink>
-    </div>
-  </div>
+        </NuxtLink>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script lang="ts" setup>

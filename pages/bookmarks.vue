@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader class="mb-8" title="Favoris" :description="description" />
     <ul class="space-y-2">
       <li v-for="bookmark in bookmarks" :key="bookmark.id">
@@ -17,7 +17,7 @@
             {{ bookmark.label }}
           </p>
           <span class="flex-1"></span>
-          <span class="text-xs font-medium text-gray-400 dark:text-gray-600">
+          <span class="shrink-0 text-xs font-medium text-muted">
             {{ getHost(bookmark.url) }}
           </span>
         </a>

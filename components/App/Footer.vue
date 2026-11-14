@@ -1,8 +1,5 @@
 <template>
-  <footer
-    class="max-w-2xl mx-auto text-gray-400 dark:text-gray-600 text-sm text-center pb-8"
-  >
-    <br>
+  <footer class="mx-auto max-w-2xl px-4 pb-8 text-center text-sm text-muted">
     <p>© {{ year }} Ludovic Nouvel. Tous droits réservés.</p>
   </footer>
 </template>

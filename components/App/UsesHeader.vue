@@ -1,12 +1,13 @@
 <template>
   <li>
     <div
-      class="relative after:-z-10 after:block after:h-[2px] after:absolute after:top-1/2 after:transform after:bg-gray-100 dark:after:bg-white/10 after:w-full after:left-0 after:right-0"
+      class="relative after:absolute after:left-0 after:right-0 after:top-1/2 after:-z-10 after:block after:h-px after:w-full after:bg-gray-200 dark:after:bg-white/10"
     >
-      <span
-        class="font-medium text-sm text-gray-600 dark:text-gray-500 bg-gray-50 dark:bg-black pr-4"
-        >{{ title }}</span
+      <h2
+        class="inline bg-gray-50 pr-4 text-xs font-semibold uppercase tracking-wider text-heading dark:bg-black"
       >
+        {{ title }}
+      </h2>
     </div>
   </li>
 </template>

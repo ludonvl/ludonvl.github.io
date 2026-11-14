@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@nuxthq/studio",
     "@vueuse/nuxt"
   ],
+  css: ["~/assets/css/main.css"],
   ui: {
     icons: ["heroicons", "lucide"],
   },

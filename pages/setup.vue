@@ -1,11 +1,11 @@
 <template>
-  <main class="min-h-screen">
+  <main>
     <AppHeader
       class="mb-12"
       title="Setup"
       :description="description"
     />
-    <div class="space-y-24">
+    <div class="space-y-16">
       <ul class="space-y-8">
         <AppUsesHeader title="Équipements" />
         <AppUsesItem v-for="(item, id) in hardware" :key="id" :item="item" />
