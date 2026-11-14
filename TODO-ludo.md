@@ -16,7 +16,6 @@ Les mêmes `TODO(ludo)` figurent aussi en commentaire dans le code concerné.
 
 ## Portfolio (`/portfolio`)
 
-- [ ] TODO(ludo): le nombre d'années pour l'intro (« X ans à construire des produits web… », aujourd'hui « Plusieurs années »). — `pages/portfolio.vue`
 - [ ] TODO(ludo): `periode` (ex. « 2021 – aujourd'hui ») et 1 ou 2 `realisations` concrètes pour chaque expérience. — `content/projects/*.json`
   - [ ] Heyteam
   - [ ] Idées, Clics & Solutions

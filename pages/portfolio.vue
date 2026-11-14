@@ -26,9 +26,8 @@
 </template>
 
 <script setup>
-// TODO(ludo): remplacer « Plusieurs années » par le nombre exact (« X ans à construire… »).
 const description =
-  "Plusieurs années à construire des produits web, de l'ESN au SaaS. Voici les équipes avec qui j'ai travaillé et ce que j'y ai livré.";
+  "Formé à <strong>EPITECH</strong>, j'y ai affiné ma <strong>vision du développement</strong> et clarifié ce que je voulais construire.<br /><br />Voici les expériences qui m'ont le plus marqué, entre projets dont je suis <strong>fier</strong> et équipes qui m'ont fait <strong>grandir</strong>, <strong>techniquement</strong> comme <strong>humainement</strong>.";
 usePageSeo({
   title: "Portfolio | Ludovic Nouvel",
   description:
