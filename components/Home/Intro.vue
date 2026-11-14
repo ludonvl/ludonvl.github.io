@@ -11,10 +11,10 @@
       Lead Developer & Product Builder
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      I build useful web products, experiment with ideas and ship things on the internet.  
+      Je construis des produits web utiles, j'expérimente des idées et je les mets en ligne.  
     </p>
     <p class="text-gray-900 dark:text-gray-400">
-      Today Lead developer @ Heyteam - VueJs / Laravel.
+      Aujourd'hui lead developer chez Heyteam (Vue.js / Laravel).
     </p>    
   </div>
 </template>

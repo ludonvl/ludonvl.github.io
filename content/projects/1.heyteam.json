@@ -3,7 +3,7 @@
   "url": "https://www.heyteam.com/",
   "description": "Expérience collaborateur & automatisation process RH",
   "poste": "Lead developer",
-  "stack": ["Laravel", "Vuejs", "MariaDB", "Git", "Gitlab", "Jira", "VS Code"],
+  "stack": ["Laravel", "Vue.js", "MariaDB", "Git", "GitLab", "Jira", "VS Code"],
   "thumbnail": "/projects/heyteam-logo.png",
   "status": "Ended"
 }

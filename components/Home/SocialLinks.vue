@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">RETROUVER MOI SUR</h2>
+    <h2 class="uppercase text-xs font-semibold text-gray-400 mb-4">Retrouvez-moi sur</h2>
     <div class="space-y-5">
       <NuxtLink
         v-for="link in links"
@@ -30,7 +30,7 @@ const links = [
     icon: "mdi:github",
   },
   {
-    name: "Linkedin",
+    name: "LinkedIn",
     url: "https://www.linkedin.com/in/ludovicnouvel/",
     icon: "mdi:linkedin",
   },

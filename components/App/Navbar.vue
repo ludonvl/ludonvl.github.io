@@ -42,7 +42,7 @@ const headerRef = ref(null);
 const { styles } = useFixedHeader(headerRef);
 
 const items = [
-  { name: "Home", path: "/", icon: "solar:home-smile-outline" },
+  { name: "Accueil", path: "/", icon: "solar:home-smile-outline" },
   {
     name: "Portfolio",
     path: "/portfolio",

@@ -28,7 +28,7 @@
 
 <script setup>
 const description =
-  "Quelques ressources autour de la <strong>TECH</strong> qui m'ont marqué, que j'explore ou que j'ai simplement envie de partager. <br /><br />À travers plusieurs formats : des <strong>vidéos pédagogiques</strong>, des <strong>articles inspirantes</strong>, des <strong>outils pratiques</strong> ou même des <strong>livres enrichissants</strong>.<br /><br />Cette liste est toujours en cours d'expansion. <br /><br />N'hésitez pas à me partager <a href='mailto:ludo.nvl@gmail.com?subject=Propose un favori' class='underline'>vos propres favoris</a>.";
+  "Quelques ressources autour de la tech qui m'ont marqué, que j'explore ou que j'ai simplement envie de partager. <br /><br />À travers plusieurs formats : des <strong>vidéos pédagogiques</strong>, des <strong>articles inspirants</strong>, des <strong>outils pratiques</strong> ou même des <strong>livres enrichissants</strong>.<br /><br />Cette liste est toujours en cours d'expansion. <br /><br />N'hésitez pas à me partager <a href='mailto:ludo.nvl@gmail.com?subject=Proposition de favori' class='underline'>vos propres favoris</a>.";
 useSeoMeta({
   title: "Favoris | Ludovic Nouvel",
   description,
@@ -37,12 +37,12 @@ useSeoMeta({
 const bookmarks = [
   {
     id: 1,
-    label: "Adam Wathan - Tailwind CSS Best Practice Patterns",
+    label: "Adam Wathan — Tailwind CSS Best Practice Patterns",
     url: "https://www.youtube.com/watch?v=J_7_mnFSLDg",
   },
   {
     id: 2,
-    label: "Dicebear Awesome avatars",
+    label: "DiceBear — générateur d'avatars",
     url: "https://www.dicebear.com/",
   },
   {
@@ -52,37 +52,37 @@ const bookmarks = [
   },
   {
     id: 4,
-    label: "Coder Proprement - Roberet C. Martin",
+    label: "Coder proprement — Robert C. Martin",
     url: "https://www.amazon.com/CODER-PROPREMENT-Robert-C-MARTIN/dp/232600227X/ref=sr_1_1?crid=3CGRMR1586CZI&dib=eyJ2IjoiMSJ9.xdw5oTqj_5rWUf5k1FHpJNZZ1nFeALZoxWZME-D14yvshgATWsQtxSpKAYW6-Qnw.yob7vh7Htfh_-9OKXWBsdtm1GEslVhKwslalz2YJvxM&dib_tag=se&keywords=coder+proprement&qid=1756028809&sprefix=coder+proprement%2Caps%2C144&sr=8-1",
   },
   {
     id: 5,
-    label: "Engenireeg Manager for the rest of us - Sarah Drasner",
+    label: "Engineering Management for the Rest of Us — Sarah Drasner",
     url: "https://www.amazon.com/Engineering-Management-Rest-Sarah-Drasner-ebook/dp/B0BGYVDX35/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.T-aUgnIxJ_hErxfAitbkXE7NelOkBqZuIxtg-WIXjuHi8PIOHzIrAkpDbBlKXoIdbGXPfaP5Y3DsdfL4ypOldF2e8X22tC0gh_58BHZUUd4vGys53p9gGOChIHG2Mx6PiUfoZcIlM31iiM-FkOKFOHrmP-iIApIGcJgzdcPFmMB0Irei2CWpFNgaQ_klnR_NexA5qFkXtZurulpn7l8o0aqzND_QweXqPcbnPttFbgU.MHe-6pjJHWleyLo0hKiLzuXY77qxJMSNQCXoHjAi4Bo&qid=1756028852&sr=8-1",
   },
   {
     id: 6,
-    label: "Laravel boost",
+    label: "Laravel Boost",
     url: "https://github.com/laravel/boost",
   },
   {
     id: 7,
-    label: "Franken PHP - Modern PHP server",
+    label: "FrankenPHP — serveur PHP moderne",
     url: "https://github.com/php/frankenphp",
   },
   {
     id: 8,
-    label: "Hatica - Engenireeg Analytics to boost developer",
+    label: "Hatica — Engineering analytics for developer productivity",
     url: "https://www.hatica.io/",
   },
   {
     id: 9,
-    label: "Tines - Beautiful landing page",
+    label: "Tines — exemple de landing page",
     url: "https://www.tines.com/product",
   },
   {
     id: 10,
-    label: "Netflix Tech Blog - Accelerating Video Quality Control",
+    label: "Netflix Tech Blog — Accelerating Video Quality Control",
     url: "https://netflixtechblog.com/accelerating-video-quality-control-at-netflix-with-pixel-error-detection-47ef7af7ca2e",
   },
   {

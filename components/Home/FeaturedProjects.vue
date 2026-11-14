@@ -12,7 +12,7 @@
     </div>
     <div class="flex items-center justify-center mt-6 text-sm">
       <UButton
-        label="Tous le portfolio &rarr;"
+        label="Tout le portfolio &rarr;"
         to="/portfolio"
         variant="link"
         color="gray"

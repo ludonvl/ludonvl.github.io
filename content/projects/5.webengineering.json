@@ -1,9 +1,9 @@
 {
   "name": "WebEngineering",
   "url": null,
-  "description": "Plateforme de recrutement specialisé des métiers d'ingénierie.",
+  "description": "Plateforme de recrutement spécialisée dans les métiers de l'ingénierie.",
   "poste": "Développeur web back",
-  "stack": ["Jelix", "Git", "Github", "Asana", "Sublime Text"],
+  "stack": ["Jelix", "Git", "GitHub", "Asana", "Sublime Text"],
   "thumbnail": "/projects/we-logo.jpeg",
   "status": "Ended"
 }
