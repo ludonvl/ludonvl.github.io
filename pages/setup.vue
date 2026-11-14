@@ -25,9 +25,11 @@
 <script setup>
 const description =
   "J’accorde beaucoup d’importance à mon environnement de travail. Le choix du matériel et des logiciels doit être réfléchi, afin que mon setup reste <strong>hybride</strong> et réponde à deux besoins essentiels.<br /><br />D’un côté, la <strong>productivité</strong> : étant en 100% remote, il est indispensable de disposer des bons outils pour travailler efficacement.<br />De l’autre, le <strong>gaming</strong> : j’aime aussi profiter de mon temps libre pour jouer, en parallèle de mes projets tech.<br /><br />Voici la liste complète de mon setup, pensé pour répondre à cette double exigence.";
-useSeoMeta({
+usePageSeo({
   title: "Setup | Ludovic Nouvel",
-  description,
+  description:
+    "Le matériel et les logiciels que j'utilise au quotidien pour travailler en remote et jouer : écrans, claviers, souris, micro, bureau et applications.",
+  path: "/setup",
 });
 const { data: items } = await useAsyncData("uses", () =>
   queryContent("/uses").find()

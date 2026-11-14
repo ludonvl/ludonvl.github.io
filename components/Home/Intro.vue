@@ -20,9 +20,10 @@
 </template>
 
 <script setup>
-useSeoMeta({
+usePageSeo({
   title: "Ludovic Nouvel",
   description:
-    "Ludo, développeur fullstack french touch. JavaScript, Vue, Node, PHP & Laravel lover — j’aime transformer mes idées en produits concrets.",
+    "Ludovic Nouvel, lead developer chez Heyteam. Je conçois et livre des produits web avec Vue.js et Laravel. Portfolio, setup et ressources tech à découvrir.",
+  path: "/",
 });
 </script>

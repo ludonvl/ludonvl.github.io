@@ -1,6 +1,7 @@
 {
   "name": "WebEngineering",
   "url": null,
+  "todo": "TODO(ludo): URL réelle de WebEngineering (aucun lien tant qu'elle manque)",
   "description": "Plateforme de recrutement spécialisée dans les métiers de l'ingénierie.",
   "poste": "Développeur web back",
   "stack": ["Jelix", "Git", "GitHub", "Asana", "Sublime Text"],

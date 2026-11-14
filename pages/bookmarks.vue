@@ -29,9 +29,11 @@
 <script setup>
 const description =
   "Quelques ressources autour de la tech qui m'ont marqué, que j'explore ou que j'ai simplement envie de partager. <br /><br />À travers plusieurs formats : des <strong>vidéos pédagogiques</strong>, des <strong>articles inspirants</strong>, des <strong>outils pratiques</strong> ou même des <strong>livres enrichissants</strong>.<br /><br />Cette liste est toujours en cours d'expansion. <br /><br />N'hésitez pas à me partager <a href='mailto:ludo.nvl@gmail.com?subject=Proposition de favori' class='underline'>vos propres favoris</a>.";
-useSeoMeta({
+usePageSeo({
   title: "Favoris | Ludovic Nouvel",
-  description,
+  description:
+    "Vidéos, livres, articles et outils tech qui m'ont marqué et que je recommande : Tailwind CSS, Laravel, clean code, management d'équipe et plus encore.",
+  path: "/bookmarks",
 });
 
 const bookmarks = [
