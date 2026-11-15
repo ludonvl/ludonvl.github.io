@@ -24,18 +24,8 @@ Les mêmes `TODO(ludo)` figurent aussi en commentaire dans le code concerné.
 
 ## Setup (`/setup`)
 
-- [ ] TODO(ludo): la date « Mis à jour le … » (`updatedAt`, format AAAA-MM-JJ, affichée seulement si renseignée). — `pages/setup.vue`
 - [ ] TODO(ludo): une photo du bureau (`deskPhoto`, par ex. `/setup/bureau.jpg`). — `pages/setup.vue`
 - [ ] TODO(ludo): des vignettes par item (champ `image` dans `content/uses/*.json`, facultatif).
-- [ ] TODO(ludo): mettre à jour les éléments datés :
-  - [ ] iPhone 15 Pro présenté comme « dernier plaisir » (la page Apple redirige vers `/fr/iphone/`) — `content/uses/apple-iphone-15-pro.json`
-  - [ ] Arc toujours navigateur principal ? — `content/uses/arc-browser.json`
-  - [ ] MacBook Pro 2016 toujours utilisé ? — `content/uses/macbook-pro.json`
-- [ ] TODO(ludo): les liens manquants, retirés parce qu'ils étaient faux :
-  - [ ] LG 27 pouces : l'ancien lien pointait vers la fiche de l'écran Asus — `content/uses/lg-monitor.json`
-  - [ ] MX Master 3 : il n'y a plus de page produit sur logitech.com/fr-fr — `content/uses/logitech-mx-master-3s.json`
-  - [ ] Fausses plantes : l'ancien lien pointait vers amazon.in — `content/uses/fake-plants.json`
-- [ ] TODO(ludo): vérifier le modèle d'écran Asus. La fiche LDLC correspond au ROG Swift **PG34WCDM** (OLED), alors que l'item s'appelle « Swift PG34 ». — `content/uses/asus-monitor.json`
 
 ## Favoris (`/bookmarks`)
 

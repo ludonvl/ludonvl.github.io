@@ -28,9 +28,8 @@
 </template>
 
 <script setup>
-// TODO(ludo): date de dernière mise à jour réelle au format AAAA-MM-JJ (affichée seulement si renseignée),
-// à fixer une fois les éléments datés revus (iPhone 15 Pro, Arc, MacBook Pro 2016).
-const updatedAt = null;
+// Date de la dernière revue du setup (AAAA-MM-JJ), à changer à chaque mise à jour.
+const updatedAt = "2026-11-15";
 // TODO(ludo): photo du bureau, par ex. "/setup/bureau.jpg" dans public/ (affichée seulement si renseignée).
 // Les vignettes par item se renseignent avec le champ « image » de chaque fichier content/uses/*.json.
 const deskPhoto = null;
