@@ -17,12 +17,6 @@ Les mêmes `TODO(ludo)` figurent aussi en commentaire dans le code concerné.
 
 ## Portfolio (`/portfolio`)
 
-- [ ] TODO(ludo): `periode` (ex. « 2021 – aujourd'hui ») et 1 ou 2 `realisations` concrètes pour chaque expérience. — `content/projects/*.json`
-  - [ ] Heyteam
-  - [ ] Idées, Clics & Solutions
-  - [ ] Witco
-  - [ ] R-PUR
-  - [ ] WebEngineering
 - [ ] TODO(ludo): l'URL réelle de WebEngineering. Pour l'instant, la carte n'a pas de lien. — `content/projects/5.webengineering.json` (`url`)
 - [ ] TODO(ludo): vérifier les stacks réduites. R-PUR ne garde que React Native et WebEngineering que Jelix une fois les outils retirés (Git, GitHub, GitLab, éditeurs, Jira, Trello, Asana). — `content/projects/*.json`
 - [ ] TODO(ludo): les études de cas de la section Projets (voir Accueil). La section reste masquée tant qu'il n'y en a aucune.

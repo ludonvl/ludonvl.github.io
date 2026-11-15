@@ -3,8 +3,12 @@
   "url": "https://www.heyteam.com/",
   "description": "Expérience collaborateur & automatisation process RH",
   "poste": "Lead developer",
-  "periode": "",
-  "realisations": [],
+  "periode": "Février 2019 – aujourd'hui",
+  "realisations": [
+    "Conception et développement de DevQuality, l'outil de suivi de la qualité livrée par l'équipe.",
+    "Mise en place du process de code review.",
+    "Définition des OKRs et du process de review trimestrielle."
+  ],
   "stack": [
     "Laravel",
     "Vue.js",
