@@ -6,7 +6,7 @@
         : 'space-y-4'
     "
   >
-    <!-- captureFormat: "portrait" pour une capture mobile, affichée entière ; sinon 16:9 -->
+    <!-- captureFormat: "portrait" pour une capture mobile ; sinon pleine largeur, ratio d'origine conservé -->
     <NuxtImg
       v-if="study.capture"
       :src="study.capture"
@@ -14,7 +14,7 @@
       :class="
         portrait
           ? 'mx-auto w-full max-w-[220px] shrink-0 rounded-2xl border border-gray-200 sm:mx-0 sm:w-48 dark:border-white/10'
-          : 'aspect-video w-full rounded-xl border border-gray-200 bg-gray-100 object-cover dark:border-white/10 dark:bg-gray-900'
+          : 'h-auto w-full rounded-xl border border-gray-200 bg-gray-100 dark:border-white/10 dark:bg-gray-900'
       "
       loading="lazy"
     />
