@@ -3,6 +3,8 @@
   "probleme": "Entre les jeux sur l'étagère, ceux qu'on attend et les parties entre amis, tout était éparpillé. Et chaque soirée commençait par la même question : « On joue à quoi ce soir ? »",
   "construit": "Une ludothèque personnelle : suivi de la collection et des jeux à venir, enregistrement des parties (joueurs, scores, gagnant), statistiques par joueur, et un moteur de recommandation qui propose un jeu selon le nombre de joueurs, la durée, la difficulté et l'ambiance, en expliquant chaque suggestion.",
   "resultat": "En ligne et en développement actif : plus de 100 commits depuis août 2026.",
+  "capture": "/etudes-de-cas/ludology.png",
+  "captureFormat": "portrait",
   "lien": "https://ludology.ludovicnouvel.com",
   "stack": ["Next.js", "TypeScript", "Prisma / PostgreSQL", "Tailwind CSS"],
   "publie": true

@@ -1,12 +1,24 @@
 <template>
-  <article class="space-y-4">
+  <article
+    :class="
+      portrait
+        ? 'flex flex-col gap-6 sm:flex-row sm:items-start'
+        : 'space-y-4'
+    "
+  >
+    <!-- captureFormat: "portrait" pour une capture mobile, affichée entière ; sinon 16:9 -->
     <NuxtImg
       v-if="study.capture"
       :src="study.capture"
       :alt="`Capture d'écran de ${study.titre}`"
-      class="aspect-video w-full rounded-xl border border-gray-200 bg-gray-100 object-cover dark:border-white/10 dark:bg-gray-900"
+      :class="
+        portrait
+          ? 'mx-auto w-full max-w-[220px] shrink-0 rounded-2xl border border-gray-200 sm:mx-0 sm:w-48 dark:border-white/10'
+          : 'aspect-video w-full rounded-xl border border-gray-200 bg-gray-100 object-cover dark:border-white/10 dark:bg-gray-900'
+      "
       loading="lazy"
     />
+    <div :class="portrait ? 'min-w-0 flex-1 space-y-4' : 'space-y-4'">
     <div>
       <h3 class="text-base font-semibold text-gray-900 dark:text-gray-100">
         {{ study.titre }}
@@ -40,6 +52,7 @@
     >
       Voir le projet &rarr;
     </NuxtLink>
+    </div>
   </article>
 </template>
 
@@ -50,6 +63,8 @@ const props = defineProps({
     required: true,
   },
 });
+
+const portrait = computed(() => props.study.captureFormat === "portrait");
 
 const rows = computed(() =>
   [
