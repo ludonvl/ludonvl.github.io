@@ -7,17 +7,17 @@ Les mêmes `TODO(ludo)` figurent aussi en commentaire dans le code concerné.
 ## Global
 
 - [ ] TODO(ludo): valider ou remplacer l'image de partage `public/og-image.png` (1200×630, générée à partir du favicon). — `composables/usePageSeo.ts`
-- [ ] TODO(ludo): confirmer le domaine canonique `https://ludovicnouvel.com` (`runtimeConfig.public.siteUrl` dans `nuxt.config.ts`). Le fichier `CNAME` à la racine indique `cv.ludovicnouvel.com`, qui ne résout pas.
+- [x] Domaine canonique confirmé : `https://ludovicnouvel.com` (CNAME aligné le 15/11/2026).
 
 ## Accueil (`/`)
 
 - [ ] TODO(ludo): valider le texte du hero (proposition de l'audit). — `components/Home/Intro.vue`
-- [ ] TODO(ludo): préciser le résultat de DevQuality avec un effet concret si possible (temps gagné, usage en one-to-one, nombre de devs suivis).
+- [x] Résultat de DevQuality : on garde la formulation actuelle, sans chiffres internes (choix du 15/11/2026).
 - [ ] TODO(ludo): ajouter éventuellement une 3ᵉ étude de cas (Ludology et DevQuality sont faites). Le bloc d'accueil bascule automatiquement des expériences vers les projets dès qu'une étude de cas a `publie: true`. — modèle : `docs/modele-etude-de-cas.json`, à copier dans `content/etudes-de-cas/1.mon-projet.json`, captures dans `public/etudes-de-cas/`
 
 ## Portfolio (`/portfolio`)
 
-- [ ] TODO(ludo): l'URL réelle de WebEngineering. Pour l'instant, la carte n'a pas de lien. — `content/projects/5.webengineering.json` (`url`)
+- [x] URL de WebEngineering : https://webengineering.fr/
 - [ ] TODO(ludo): vérifier les stacks réduites. R-PUR ne garde que React Native et WebEngineering que Jelix une fois les outils retirés (Git, GitHub, GitLab, éditeurs, Jira, Trello, Asana). — `content/projects/*.json`
 - [ ] TODO(ludo): les études de cas de la section Projets (voir Accueil). La section reste masquée tant qu'il n'y en a aucune.
 - [ ] TODO(ludo): du contenu pour « Expérimentation personnelle » et « Projets d'étude » si tu veux réafficher ces sections. — `pages/portfolio.vue`

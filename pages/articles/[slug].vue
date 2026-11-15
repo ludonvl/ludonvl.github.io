@@ -15,8 +15,9 @@
 <script setup>
 const route = useRoute();
 const { slug } = route.params;
+const { siteUrl } = useRuntimeConfig().public;
 useSeoMeta({
-  ogImage: `https://cv.ludovicnouvel.com/articles/${slug}.png`,
+  ogImage: `${siteUrl}/articles/${slug}.png`,
   twitterCard: "summary_large_image",
   articleAuthor: "Ludovic Nouvel",
 });
