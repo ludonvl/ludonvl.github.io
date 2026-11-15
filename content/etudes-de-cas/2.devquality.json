@@ -1,0 +1,8 @@
+{
+  "titre": "DevQuality — Heyteam",
+  "probleme": "Suivre la qualité livrée en production (fonctionnalités, bugs, tâches de support) demandait de croiser Jira, GitLab et Notion à la main. Difficile, dans ces conditions, d'avoir une vision claire pour faire du feedback aux développeurs et suivre les process internes.",
+  "construit": "Un outil interne qui agrège les données de Jira, GitLab et Notion pour donner un suivi macro de l'équipe et un suivi individuel par développeur : qualité des livraisons, bugs, déploiements, dette technique. Le suivi managérial devient plus simple et le feedback s'appuie sur des faits.",
+  "resultat": "Déployé et utilisé en interne chez Heyteam depuis 2026.",
+  "stack": ["Nuxt", "Vue.js", "TypeScript", "API Jira · GitLab · Notion"],
+  "publie": true
+}
