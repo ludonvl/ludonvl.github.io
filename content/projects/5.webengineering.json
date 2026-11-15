@@ -3,8 +3,10 @@
   "url": null,
   "description": "Plateforme de recrutement spécialisée dans les métiers de l'ingénierie.",
   "poste": "Développeur web back",
-  "periode": "",
-  "realisations": [],
+  "periode": "2016 · 5 mois",
+  "realisations": [
+    "Refonte du back-office commercial et développement de plusieurs modules PHP avec le framework Jelix."
+  ],
   "stack": [
     "Jelix"
   ],

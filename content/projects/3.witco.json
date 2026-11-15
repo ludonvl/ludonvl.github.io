@@ -3,8 +3,10 @@
   "url": "https://www.witco.io/fr",
   "description": "Application tout-en-un pour la vie au travail",
   "poste": "Développeur web & mobile",
-  "periode": "",
-  "realisations": [],
+  "periode": "2017 · 4 mois",
+  "realisations": [
+    "Développement et déploiement de l'application mobile, publiée sur l'App Store et le Play Store."
+  ],
   "stack": [
     "Meteor",
     "React Native",

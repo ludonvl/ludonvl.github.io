@@ -3,8 +3,11 @@
   "url": "https://www.ideesclics.team/",
   "description": "ESN — « Inventeurs de solutions »",
   "poste": "Développeur web fullstack",
-  "periode": "",
-  "realisations": [],
+  "periode": "2014 (4 mois), puis 2018 (1 an)",
+  "realisations": [
+    "Mise en place d'un écosystème d'API partagé par plusieurs plateformes front.",
+    "Refonte front-end de plusieurs sites internes au groupe."
+  ],
   "stack": [
     "PHP",
     "Lumen",

@@ -3,8 +3,10 @@
   "url": "https://www.r-pur.com/",
   "description": "Masque anti-pollution",
   "poste": "Développeur mobile",
-  "periode": "",
-  "realisations": [],
+  "periode": "2018 · freelance",
+  "realisations": [
+    "Développement de l'application mobile Android de la start-up."
+  ],
   "stack": [
     "React Native"
   ],
