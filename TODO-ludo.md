@@ -12,7 +12,8 @@ Les mêmes `TODO(ludo)` figurent aussi en commentaire dans le code concerné.
 ## Accueil (`/`)
 
 - [ ] TODO(ludo): valider le texte du hero (proposition de l'audit). — `components/Home/Intro.vue`
-- [ ] TODO(ludo): ajouter 2 ou 3 études de cas avec visuel. Le bloc d'accueil bascule automatiquement des expériences vers les projets dès qu'une étude de cas a `publie: true`. — modèle : `docs/modele-etude-de-cas.json`, à copier dans `content/etudes-de-cas/1.mon-projet.json`, captures dans `public/etudes-de-cas/`
+- [ ] TODO(ludo): capture d'écran de Ludology (16:9) dans `public/etudes-de-cas/ludology.png`, puis renseigner `capture` dans `content/etudes-de-cas/1.ludology.json`.
+- [ ] TODO(ludo): ajouter 1 ou 2 autres études de cas avec visuel (Ludology est faite). Le bloc d'accueil bascule automatiquement des expériences vers les projets dès qu'une étude de cas a `publie: true`. — modèle : `docs/modele-etude-de-cas.json`, à copier dans `content/etudes-de-cas/1.mon-projet.json`, captures dans `public/etudes-de-cas/`
 
 ## Portfolio (`/portfolio`)
 
