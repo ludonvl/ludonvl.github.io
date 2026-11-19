@@ -1,11 +1,6 @@
 <template>
   <main>
-    <AppHeader class="mb-6" title="Setup" :description="description" />
-    <p v-if="updatedAt" class="mb-12 text-sm text-muted">
-      Mis à jour le
-      <time :datetime="updatedAt">{{ formatDate(updatedAt) }}</time>
-    </p>
-    <div v-else class="mb-12"></div>
+    <AppHeader class="mb-12" title="Setup" :description="description" />
 
     <NuxtImg
       v-if="deskPhoto"
@@ -14,16 +9,22 @@
       class="mb-16 aspect-video w-full rounded-xl object-cover ring-1 ring-gray-200 dark:ring-white/10"
     />
 
-    <iframe
-      src="https://ohmydesk.ludovicnouvel.com/embed/mon-setup?autorotate=true"
-      title="Mon setup en 3D (OhMyDesk)"
-      width="100%"
-      height="600"
-      frameborder="0"
-      allowfullscreen
-      loading="lazy"
-      class="mb-16 w-full rounded-xl ring-1 ring-gray-200 dark:ring-white/10"
-    ></iframe>
+    <div class="mb-16">
+      <iframe
+        src="https://ohmydesk.ludovicnouvel.com/embed/mon-setup?autorotate=true"
+        title="Mon setup en 3D (OhMyDesk)"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        class="w-full rounded-xl ring-1 ring-gray-200 dark:ring-white/10"
+      ></iframe>
+      <p v-if="updatedAt" class="mt-3 text-sm text-muted">
+        Mis à jour le
+        <time :datetime="updatedAt">{{ formatDate(updatedAt) }}</time>
+      </p>
+    </div>
 
     <div class="space-y-16">
       <section v-for="group in groups" :key="group.title" class="space-y-6">
