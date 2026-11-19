@@ -14,6 +14,17 @@
       class="mb-16 aspect-video w-full rounded-xl object-cover ring-1 ring-gray-200 dark:ring-white/10"
     />
 
+    <iframe
+      src="https://ohmydesk.ludovicnouvel.com/embed/mon-setup?autorotate=true"
+      title="Mon setup en 3D (OhMyDesk)"
+      width="100%"
+      height="600"
+      frameborder="0"
+      allowfullscreen
+      loading="lazy"
+      class="mb-16 w-full rounded-xl ring-1 ring-gray-200 dark:ring-white/10"
+    ></iframe>
+
     <div class="space-y-16">
       <section v-for="group in groups" :key="group.title" class="space-y-6">
         <ul>
