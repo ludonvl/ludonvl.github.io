@@ -44,7 +44,7 @@
 
 <script setup>
 const description =
-  "Quelques ressources autour de la tech qui m'ont marqué, que j'explore ou que j'ai simplement envie de partager. <br /><br />À travers plusieurs formats : des <strong>vidéos pédagogiques</strong>, des <strong>articles inspirants</strong>, des <strong>outils pratiques</strong> ou même des <strong>livres enrichissants</strong>.<br /><br />Cette liste est toujours en cours d'expansion. <br /><br />N'hésitez pas à me partager <a href='mailto:ludo.nvl@gmail.com?subject=Proposition de favori' class='underline'>vos propres favoris</a>.";
+  "Quelques ressources autour de la tech qui m'ont marqué, que j'explore ou que j'ai simplement envie de partager. <br /><br />À travers plusieurs formats : des <strong>vidéos pédagogiques</strong>, des <strong>articles inspirants</strong>, des <strong>outils pratiques</strong> ou même des <strong>livres enrichissants</strong>.<br /><br />Cette liste est toujours en cours d'expansion. <br /><br />N'hésitez pas à me partager <a href='mailto:contact@ludovicnouvel.com?subject=Proposition de favori' class='underline'>vos propres favoris</a>.";
 usePageSeo({
   title: "Favoris | Ludovic Nouvel",
   description:

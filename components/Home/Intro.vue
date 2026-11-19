@@ -28,7 +28,7 @@
         class="min-h-[44px]"
       />
       <UButton
-        to="mailto:ludo.nvl@gmail.com"
+        to="mailto:contact@ludovicnouvel.com"
         external
         label="Écrivez-moi"
         color="gray"
